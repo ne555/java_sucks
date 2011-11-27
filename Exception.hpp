@@ -18,9 +18,10 @@ class Exception : public Object, public exception
  public:
 	Exception();
 	Exception(const String&);
+	~Exception() throw();
 	
 	virtual Exception& operator=(const Exception&);
-	virtual const char* what() const;
+	virtual const char* what() const throw();
 };
 
 } //end of namespace

@@ -23,9 +23,12 @@ template <typename T> class Array : public Object
 	virtual const T& operator[](int) const;
 	virtual T& operator[](int);
 };
+}
+
 
 
 #include "ArrayIndexOutOfBoundsException.hpp"
+namespace mhc8{
 
 //mhc8::Array<T> constructors/destructors
 template <typename T> Array<T>::Array(int length) : count(length), length(count) {
@@ -74,3 +77,4 @@ template <typename T> T& Array<T>::operator[](int n) {
 } //end of namespace
 
 #endif
+
