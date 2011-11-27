@@ -5,14 +5,13 @@
 #include <iostream>
 #include "String.hpp"
 
-//using namespace mhc8;
+using namespace mhc8;
 using std::ostream;
 using std::stringstream;
 
-namespace mhc8{
 //Object method definitions
 int Object::hashCode() const {
-	return (int)this;
+	//return (int)this;
 	return 42;
 }
 
@@ -29,4 +28,4 @@ String Object::toString() const {
 	return out << obj.toString();
 }*/
 
-}
+

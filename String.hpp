@@ -28,7 +28,6 @@ class String : public Object, public Comparable<String>
 	virtual char& operator[](int);
 	
 	virtual int hashCode() const;
-	//virtual const String& toString() const;
 	virtual String toString() const;
 	virtual int compareTo(const String&) const;
 	virtual int compareToIgnoreCase(const String&) const;
